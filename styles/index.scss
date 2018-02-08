@@ -1,0 +1,115 @@
+@import 'global.scss';
+body.ihelpyou {
+    font-family: 'Roboto', sans-serif;
+}
+
+.ihelpyou {
+    position: relative;
+    height: 100%;
+    header {
+        .section-container {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        .navbar {
+            margin-bottom: 0px;
+            padding: 7px 0px;
+        }
+        .header {
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+            &.shrink {
+                opacity: 0.7;
+                padding: 0px 0px;
+            }
+        }
+    }
+    .containers {
+        text-align: center;        
+        section:not(first) {
+            padding-top: 50px; 
+        }
+        .container {
+            &_banner {
+                .fill-screen-section {
+                    @include background-cover('../../assets/home.jpg');
+                    position: relative;
+                    overflow: hidden;
+                    @media (max-width: 1634px) {
+                        margin-top: -60px;
+                    }
+                    &:before {
+                        content: ' ';
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        background: rgba(0, 0, 0, 0.3)
+                    }
+                    .content {
+                        position: relative;
+                        height: 100%;
+                        .centered {
+                            position: absolute;
+                            z-index: 100;
+                            color: white;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            text-shadow: 3px 3px 10px rgba(0, 0, 0, .7);
+                            h1 {
+                                font-size: 80px;
+                            }
+                            .banner-text {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    .arrow-down {
+                        position: absolute;
+                        z-index: 150;
+                        bottom: 160px;
+                        width: 100%;
+                        text-align: center;
+                        a {
+                            color: white;
+                        }
+                    }
+                }
+            }
+            &_replies {
+                .fill-screen-section {
+                    @include background-cover('../../assets/people-joined.jpg');
+                    height: 400px;
+                    position: relative;
+                    overflow: hidden;
+                    &:before {
+                        content: ' ';
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        background: rgba(0, 0, 0, 0.5)
+                    }
+                    h1 {
+                        position: relative;
+                        z-index: 100;
+                        color: white;
+                        top: 10%;
+                        text-shadow: 3px 3px 10px rgba(0, 0, 0, .7);
+                    }
+                }
+            }
+            &_why {
+                height: 300px;
+            }
+        }
+    }
+}
