@@ -4,6 +4,8 @@ body.ihelpyou {
 .ihelpyou {
   position: relative;
   height: 100%; }
+  .ihelpyou section:not(:first-child) {
+    padding-top: 50px; }
   .ihelpyou header .section-container {
     padding-top: 80px;
     padding-bottom: 80px; }
@@ -11,6 +13,8 @@ body.ihelpyou {
     margin-bottom: 0px;
     padding: 7px 0px;
     background-color: transparent; }
+    .ihelpyou header .navbar-toggle {
+      border-color: white; }
   .ihelpyou header .header {
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -38,17 +42,12 @@ body.ihelpyou {
         color: white; }
   .ihelpyou .containers {
     text-align: center; }
-    .ihelpyou .containers section:not(first) {
-      padding-top: 50px; }
     .ihelpyou .containers .container_banner .fill-screen-section {
       background-image: url("../../assets/home.jpg");
       background-size: cover;
       background-position: center;
       position: relative;
       overflow: hidden; }
-      @media (max-width: 1634px) {
-        .ihelpyou .containers .container_banner .fill-screen-section {
-          margin-top: -60px; } }
       .ihelpyou .containers .container_banner .fill-screen-section:before {
         content: ' ';
         display: block;

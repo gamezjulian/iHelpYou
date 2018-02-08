@@ -20,17 +20,22 @@ var resizeHomeSection = (function () {
     });
 });
 
+var scrollspy = (function () {
+    $('.ihelpyou').scrollspy({
+        target: '.navbar'
+    });
+});
+
+var parallax = (function () {
+    $('.container_banner .fill-screen-section').parallaxie({
+        speed: 0.4
+    });
+});
+
 
 $(function () {
     animatedHeader();
     resizeHomeSection();
-
-    $('.ihelpyou').scrollspy({
-        target: '.navbar'
-    });
-
-    $('.container_banner .fill-screen-section').parallaxie({
-        speed: 0.4,
-        offset: -70,
-    });
+    scrollspy();
+    parallax();
 });
