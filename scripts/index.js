@@ -26,6 +26,11 @@ $(function () {
     resizeHomeSection();
 
     $('.ihelpyou').scrollspy({
-        target: '.navbar'       
+        target: '.navbar'
+    });
+
+    $('.container_banner .fill-screen-section').parallaxie({
+        speed: 0.4,
+        offset: -70,
     });
 });
