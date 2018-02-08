@@ -81,7 +81,8 @@ body.ihelpyou {
         text-align: center;
         transform: translate(-50%, -50%); }
         .ihelpyou .containers .container_banner .fill-screen-section .arrow-down a {
-          color: white; }
+          color: white;
+          font-size: 40px; }
         .ihelpyou .containers .container_banner .fill-screen-section .arrow-down i {
           transition: transform 0.3s; }
           .ihelpyou .containers .container_banner .fill-screen-section .arrow-down i:hover {
