@@ -6,7 +6,7 @@ body.ihelpyou {
 .ihelpyou {
     position: relative;
     height: 100%;
-    section:not(:first-child){
+    section:not(:first-child) {
         padding-top: 50px;
     }
     header {
@@ -106,15 +106,22 @@ body.ihelpyou {
                         a {
                             color: white;
                         }
+                        i {
+                            transition: transform 0.3s;
+                            &:hover {
+                                transform: scale(1.1); //transform: translate(-50%, -50%);
+                            }
+                        }
                     }
                 }
             }
             &_replies {
                 .fill-screen-section {
                     @include background-cover('../../assets/people-joined.jpg');
-                    height: 400px;
+                    height: 500px;
                     position: relative;
                     overflow: hidden;
+                    text-align: center;
                     &:before {
                         content: ' ';
                         display: block;
@@ -126,17 +133,34 @@ body.ihelpyou {
                         z-index: 1;
                         background: rgba(0, 0, 0, 0.5)
                     }
-                    h1 {
-                        position: relative;
+                    .fa-clock {
+                        position: absolute;
+                        color: white;
+                        font-size: 60px;
+                        top: 12%;
+                        left: 0%;
+                        right: 0%;
+                        z-index: 200;
+                    }
+                    .description {
+                        position: absolute;
                         z-index: 100;
                         color: white;
-                        top: 10%;
+                        top: 26%;
+                        left: 0%;
+                        right: 0%;
                         text-shadow: 3px 3px 10px rgba(0, 0, 0, .7);
                     }
                 }
             }
             &_why {
-                height: 300px;
+                height: 500px;
+                div {
+                    padding-top: 20px;
+                }
+                .fa-thumbs-up {
+                    font-size: 60px;
+                }
             }
         }
     }

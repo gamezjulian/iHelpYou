@@ -82,13 +82,18 @@ body.ihelpyou {
         transform: translate(-50%, -50%); }
         .ihelpyou .containers .container_banner .fill-screen-section .arrow-down a {
           color: white; }
+        .ihelpyou .containers .container_banner .fill-screen-section .arrow-down i {
+          transition: transform 0.3s; }
+          .ihelpyou .containers .container_banner .fill-screen-section .arrow-down i:hover {
+            transform: scale(1.1); }
     .ihelpyou .containers .container_replies .fill-screen-section {
       background-image: url("../../assets/people-joined.jpg");
       background-size: cover;
       background-position: center;
-      height: 400px;
+      height: 500px;
       position: relative;
-      overflow: hidden; }
+      overflow: hidden;
+      text-align: center; }
       .ihelpyou .containers .container_replies .fill-screen-section:before {
         content: ' ';
         display: block;
@@ -99,11 +104,25 @@ body.ihelpyou {
         height: 100%;
         z-index: 1;
         background: rgba(0, 0, 0, 0.5); }
-      .ihelpyou .containers .container_replies .fill-screen-section h1 {
-        position: relative;
+      .ihelpyou .containers .container_replies .fill-screen-section .fa-clock {
+        position: absolute;
+        color: white;
+        font-size: 60px;
+        top: 12%;
+        left: 0%;
+        right: 0%;
+        z-index: 200; }
+      .ihelpyou .containers .container_replies .fill-screen-section .description {
+        position: absolute;
         z-index: 100;
         color: white;
-        top: 10%;
+        top: 26%;
+        left: 0%;
+        right: 0%;
         text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7); }
     .ihelpyou .containers .container_why {
-      height: 300px; }
+      height: 500px; }
+      .ihelpyou .containers .container_why div {
+        padding-top: 20px; }
+      .ihelpyou .containers .container_why .fa-thumbs-up {
+        font-size: 60px; }

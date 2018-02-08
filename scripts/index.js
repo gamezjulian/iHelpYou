@@ -38,4 +38,6 @@ $(function () {
     resizeHomeSection();
     scrollspy();
     parallax();
+
+    new WOW().init();
 });
