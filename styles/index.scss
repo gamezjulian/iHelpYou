@@ -1,4 +1,5 @@
 @import 'global.scss';
+@import 'variables.scss';
 body.ihelpyou {
     font-family: 'Roboto', sans-serif;
 }
@@ -6,20 +7,17 @@ body.ihelpyou {
 .ihelpyou {
     position: relative;
     height: 100%;
-    section:not(:first-child) {
-        padding-top: 50px;
+    .page-section {
+        margin-top: 50px;
+        color: #777;
     }
     header {
-        .section-container {
-            padding-top: 80px;
-            padding-bottom: 80px;
-        }
         .navbar {
             margin-bottom: 0px;
             padding: 7px 0px;
             background-color: transparent;
             &-toggle {
-                border-color: white;
+                border-color: $nav1;
             }
         }
         .header {
@@ -30,12 +28,12 @@ body.ihelpyou {
                 color: rgba(255, 255, 255, .8);
                 font-size: xx-large;
                 &:hover {
-                    color: white;
+                    color: $nav1;
                     font-weight: bold;
                 }
             }
             &.shrink {
-                background-color: rgba(0, 0, 0, .5);
+                background-color: rgba(0, 0, 0, 0.6);
                 opacity: 0.6;
                 padding: 0px 0px;
             }
@@ -45,14 +43,14 @@ body.ihelpyou {
                     a {
                         color: rgba(255, 255, 255, .8);
                         &:hover {
-                            color: white;
+                            color: $nav1;
                             font-weight: bold;
                         }
                     }
                     .active a {
                         font-weight: bold;
                         background-color: transparent;
-                        color: white;
+                        color: $nav1;
                     }
                 }
             }
@@ -83,7 +81,7 @@ body.ihelpyou {
                         .centered {
                             position: absolute;
                             z-index: 100;
-                            color: white;
+                            color: $font1Color;
                             top: 50%;
                             left: 50%;
                             transform: translate(-50%, -50%);
@@ -100,11 +98,11 @@ body.ihelpyou {
                         position: absolute;
                         z-index: 150;
                         bottom: 10%;
-                        left: 50%;                        
+                        left: 50%;
                         text-align: center;
                         transform: translate(-50%, -50%);
                         a {
-                            color: white;
+                            color: $font1Color;
                             font-size: 40px;
                         }
                         i {
@@ -112,6 +110,11 @@ body.ihelpyou {
                             &:hover {
                                 transform: scale(1.1); //transform: translate(-50%, -50%);
                             }
+                        }
+
+                        .fa-angle-down{
+                            position: absolute;
+                            animation: scroll-down-anim 1s infinite;
                         }
                     }
                 }
@@ -136,7 +139,7 @@ body.ihelpyou {
                     }
                     .fa-clock {
                         position: absolute;
-                        color: white;
+                        color: $font1Color;
                         font-size: 60px;
                         top: 12%;
                         left: 0%;
@@ -146,7 +149,7 @@ body.ihelpyou {
                     .description {
                         position: absolute;
                         z-index: 100;
-                        color: white;
+                        color: $font1Color;
                         top: 26%;
                         left: 0%;
                         right: 0%;
@@ -156,6 +159,15 @@ body.ihelpyou {
             }
             &_why {
                 height: 500px;
+                .section-line {
+                    background-color: $line1;
+                    width: 80px;
+                    height: 2px;
+                    padding: 0px;
+                    margin: auto;
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
                 div {
                     padding-top: 20px;
                 }
