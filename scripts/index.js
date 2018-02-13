@@ -16,7 +16,7 @@ var animatedHeader = (function () {
 
 var resizeHomeSection = (function () {
     $(window).on("load resize", function () {
-        $(".container_banner .fill-screen-section").css("height", window.innerHeight);
+        $("#banner").css("height", window.innerHeight);
     });
 });
 
@@ -27,7 +27,7 @@ var scrollspy = (function () {
 });
 
 var parallax = (function () {
-    $('.container_banner .fill-screen-section').parallaxie({
+    $('#banner').parallaxie({
         speed: 0.4
     });
 });

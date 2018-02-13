@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="node_modules/wowjs/css/libs/animate.css" />
-    <link rel="stylesheet" type="text/css" href="dist/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="dist/css/main.css" />
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
 </head>
 
-<body class="ihelpyou">
+<body>
     <header id="header">
-        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse header">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse header font--size-s">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -31,106 +31,108 @@
                             <a href="#header">HOME</a>
                         </li>
                         <li>
-                            <a href="#why">ABOUT</a>
+                            <a href="#section2">SECTION 2</a>
                         </li>
                         <li>
-                            <a href="#replies">EXPERIENCES</a>
+                            <a href="#section3">SECTION 3</a>
                         </li>
                         <li>
-                            <a href="#howItWorks">HOW IT WORKS</a>
+                            <a href="#section4">SECTION 4</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="containers">
-        <section class="container-fluid container_banner row">
+    <div>
+        <section id="banner" class="container-fluid section section--cover" style="background-image: url('/assets/home.jpg')">
             <div class="row">
-                <div>
-                    <div class="fill-screen-section">
-                        <div class="content text-center col-sm-12" >
-                            <div class="centered">
-                                <h1>iHelpYou</h1>
-                                <div class="col-sm-12 banner-text">
-                                    Convenient, affordable, private online counseling. Anytime, anywhere. Talk with a licensed, professional therapist online.
-                                </div>
-                            </div>
-                            <div class="arrow-down">
-                                <a class="btn" href="#why">
-                                    <i class="fas fa-angle-down"></i>
-                                </a>
-                            </div>
-                        </div>
+                <div class="col-sm-12 welcome">
+                    <div class="welcome__inner">
+                        <h1>iHelpYou</h1>
+                        <h3>
+                            Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend.
+                            Ut nonummy.
+                        </h3>
                     </div>
+                    <a id="welcome__arrow" class="welcome__arrow" href="#section2">
+                        <i class="fas fa-angle-down"></i>
+                    </a>
                 </div>
             </div>
         </section>
-        <section id="why" class="container page-section container_why">
-            <div class="row">
-                <i class="fas fa-thumbs-up"></i>
-                <h1 class="wow fadeIn" data-wow-duration="1s">Why is
-                    <label>iHelpYou</label> right for me?
-                </h1>
-                <div class="col-sm-12 wow fadeIn" data-wow-delay="1s">
-                    <div>
-                        <div class="col-sm-4">
-                            <h2>It's professional</h2>
-                            <div class="section-line"></div>
-                            <p>All counselors are licensed, accredited professionals.
-                                <var product_name="">BetterHelp</var> allows you to connect with them in a safe and private online environment.
-                                Anything you share is confidential.</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <h2>It's affordable</h2>
-                            <div class="section-line"></div>
-                            <p>Pay a low flat fee for unlimited sessions with your counselor. Counseling doesn't have to be
-                                expensive.
+        <section id="section2" class="section2 section padding--xlarge-t margin--xlarge-b">
+            <div class="container-fluid wow fadeInDown" data-wow-duration="2s">
+                <div class="row">
+                    <div class="col-sm-12 text-center section2__inner">
+                        <i class=" fas fa-thumbs-up section2__icon"></i>
+                        <h2>
+                            <label>Aenean nec lorem.</label> In porttitor.
+                            <br/> Donec laoreet
+                        </h2>
+                        <div class="divisor margin--large"></div>
+                        <div class="col-sm-6 col-sm-push-3 font--size-m">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce
+                                posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna
+                                eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant
+                                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy
+                                pede. Mauris et orci.</p>
+                            <p>
+                                Fusce aliquet pede non pede. Suspendisse dapibus lorem pellentesque magna. Integer nulla. Donec blandit feugiat ligula. Donec
+                                hendrerit, felis et imperdiet euismod, purus ipsum pretium metus, in lacinia nulla nisl eget
+                                sapien. Donec ut est in lectus consequat consequat. Etiam eget dui. Aliquam erat volutpat.
+                                Sed at lorem in nunc porta tristique.
+
                             </p>
                         </div>
-                        <div class="col-sm-4">
-                            <h2>It's convenient</h2>
-                            <div class="section-line"></div>
-                            <p>Do it at your own time and at your own pace. Communicate with your therapists as often as you
-                                want and whenever you feel it's needed. Help is available at your time and your place.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section3" class="section3 padding--xlarge">
+            <div class="container wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+                <div class="row">
+                    <div class="text-center">
+                        <i class="fab fa-twitter section2__icon"></i>
+                        <h2>
+                            <label>Suspendisse dui purus.</label> Integer blandit.
+                            <br/> Maecenas Chandler
+                        </h2>
+                        <div class="divisor margin--large"></div>
+                        <div class="col-sm-4 card wow fadeInUp" data-wow-delay="1s">
+                            <div class="card__item card--light-blue padding--medium">
+                                <i class="fas fa-user"></i>
+                                <h3 class="card__title">Etiam eget dui</h3>
+                                <p class="description padding--small-t">Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque
+                                    at, vulputate vitae, pretium mattis, nunc. Ut nonummy.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 card wow fadeInUp" data-wow-delay="1s">
+                            <div class="card__item card--pink padding--medium">
+                                <i class="fas fa-heart"></i>
+                                <h3 class="card__title">Nunc ac magna</h3>
+                                <p class="description padding--small-t">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.
+                                    Fusce posuere.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 card wow fadeInUp" data-wow-delay="1s">
+                            <div class="card__item card--green padding--medium">
+                                <i class="fas fa-tablet"></i>
+                                <h3 class="card__title">Donec blandit </h3>
+                                <p class="description padding--small-t">Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget
+                                    neque at sem venenatis eleifend. Ut nonummy.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="replies" class="container-fluid page-section container_replies">
-            <div class="row">
-                <div class="fill-screen-section">
-                    <div class="container">
-                        <i class="fas fa-clock"></i>
-                        <div class="description">
-                            <h1>More than 50000 people joined to us.What are you waiting for?</h1>
-                        </div>
-                    </div>
-                    <div class="col-sm-8">
-
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section id="howItWorks" class="container page-section container_how-it-works" style="height: 1500px;">
-            <div class="row">
-                <h1>How does it work?</h1>
-                <div class="col-sm-4">
-
-                </div>
-                <div class="col-sm-4">
-
-                </div>
-                <div class="col-sm-4">
-
-                </div>
-            </div>
+        <section id="section4" class="section--large padding--xlarge-t section--cover" style="background-image: url('assets/people-joined.jpg')">
+            <div class="container-fluid"></div>
         </section>
     </div>
     <footer>
-        <h1></h1>
     </footer>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>

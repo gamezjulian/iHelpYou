@@ -2,7 +2,7 @@
     "use strict"; // Start of use strict
 
     // Smooth scrolling using jQuery easing
-    $('.navbar ul li a[href^="#"],.arrow-down a').on('click', function (e) {
+    $('.navbar ul li a[href^="#"],.navbar-brand,#welcome__arrow').on('click', function (e) {
 
         // prevent default anchor click behavior
         e.preventDefault();
