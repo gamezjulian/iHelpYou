@@ -15,7 +15,10 @@
         bottom: 10%;
         color: $font-color--white;
         font-size: 30px;
+        transition: transform 1s;
+        animation: scroll-down-anim 1s infinite;
         &:hover {
+            transform: scale(1.5);
             color: $font-color--white;
         }
         &:visited{
