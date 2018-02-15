@@ -11,4 +11,8 @@
     &--margin-l{
         margin-left: 20px;
     }
+
+    @media(max-width: 767px){
+        display: none;
+    }
 }

@@ -177,6 +177,21 @@ h3 {
   .button:hover {
     background-color: rgba(230, 230, 230, 0.3); }
 
+.section__icon {
+  font-size: 60px;
+  color: #6e6e6e; }
+  .section__icon--white {
+    color: white; }
+  .section__icon--black {
+    color: black; }
+
+.section__title {
+  color: #6e6e6e; }
+  .section__title--white {
+    color: white; }
+  .section__title--black {
+    color: black; }
+
 .section {
   text-align: center; }
   .section--large {
@@ -256,8 +271,8 @@ h3 {
     .welcome__arrow:visited {
       color: white; }
 
-.section2__icon {
-  font-size: 60px; }
+.section2__inner {
+  color: #a1a1a1; }
 
 .section3 {
   background-color: #ebe9e9; }
@@ -294,6 +309,21 @@ h3 {
   .card__title {
     text-transform: uppercase; }
 
+.section4 {
+  color: white;
+  text-align: center; }
+  .section4__title {
+    position: absolute;
+    left: 50%;
+    z-index: 150;
+    transform: translateX(-50%); }
+  .section4__carousel {
+    position: absolute;
+    top: 60%;
+    z-index: 200; }
+  .section4__item {
+    height: 150px; }
+
 .apps {
   position: absolute;
   z-index: 10;
@@ -304,3 +334,6 @@ h3 {
     height: 50px; }
   .apps--margin-l {
     margin-left: 20px; }
+  @media (max-width: 767px) {
+    .apps {
+      display: none; } }

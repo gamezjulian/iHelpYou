@@ -1,6 +1,5 @@
 .section2 {
-    &__inner {}
-    &__icon {
-        font-size: $icon--size-xl;
+    &__inner {
+        color: $font-color--lightgrey;
     }
 }
