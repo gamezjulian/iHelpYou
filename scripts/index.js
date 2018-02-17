@@ -2,11 +2,14 @@ var animatedHeader = (function () {
     var shrinkHeader = 300;
     $(window).scroll(function () {
         var scroll = getCurrentScroll();
+        var arrow = $('#up-arrow');
         if (scroll >= shrinkHeader) {
             $('.header').addClass('shrink');
+            arrow.fadeIn("slow");
         }
         else {
             $('.header').removeClass('shrink');
+            arrow.fadeOut("slow");
         }
     });
     function getCurrentScroll() {

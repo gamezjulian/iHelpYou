@@ -192,6 +192,18 @@ h3 {
   .section__title--black {
     color: black; }
 
+.up-arrow {
+  position: fixed;
+  font-size: 50px;
+  right: 3%;
+  background-color: rgba(192, 192, 192, 0.5);
+  z-index: 300;
+  display: none;
+  animation: scroll-down-anim 1s infinite;
+  padding: 0 10px; }
+  .up-arrow .fa-angle-up {
+    color: white; }
+
 .section {
   text-align: center; }
   .section--large {
