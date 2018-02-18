@@ -21,4 +21,23 @@
             background-color: rgba(0, 0, 0, 0.5);
         }
     }
+    &__icon {
+        font-size: $icon--size-xl;
+        color: $font-color--grey;
+        &--white {
+            color: $font-color--white;
+        }
+        &--black {
+            color: $font-color--black;
+        }
+    }
+    &__title {
+        color: $font-color--grey;
+        &--white {
+            color: $font-color--white;
+        }
+        &--black {
+            color: $font-color--black;
+        }
+    }
 }

@@ -197,28 +197,6 @@ h3 {
     }
 }
 
-.section {
-    &__icon {
-        font-size: $icon--size-xl;
-        color: $font-color--grey;
-        &--white {
-            color: $font-color--white;
-        }
-        &--black {
-            color: $font-color--black;
-        }
-    }
-    &__title {
-        color: $font-color--grey;
-        &--white {
-            color: $font-color--white;
-        }
-        &--black {
-            color: $font-color--black;
-        }
-    }
-}
-
 .up-arrow {
     position: fixed;
     font-size: 50px;
