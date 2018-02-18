@@ -1,3 +1,4 @@
+.section5 {
     .people {
         &__img {
             position: relative;
@@ -25,9 +26,8 @@
             }
         }
     }
-
     .carousel-control {
-        &.left{
+        &.left {
             // left: -150px;
             background-image: unset;
         }
@@ -36,3 +36,4 @@
             background-image: unset;
         }
     }
+}

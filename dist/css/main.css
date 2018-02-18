@@ -334,10 +334,10 @@ h3 {
   .section4__item {
     height: 150px; }
 
-.people__img {
+.section5 .people__img {
   position: relative; }
 
-.people__details {
+.section5 .people__details {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -346,9 +346,9 @@ h3 {
   background: rgba(255, 255, 255, 0.6);
   opacity: 0;
   transition: opacity 1s; }
-  .people__details:hover {
+  .section5 .people__details:hover {
     opacity: 1; }
-  .people__details__inner {
+  .section5 .people__details__inner {
     content: ' ';
     position: absolute;
     top: 50%;
@@ -357,10 +357,10 @@ h3 {
     height: 60%;
     transform: translate(-50%, -50%); }
 
-.carousel-control.left {
+.section5 .carousel-control.left {
   background-image: unset; }
 
-.carousel-control.right {
+.section5 .carousel-control.right {
   background-image: unset; }
 
 .apps {

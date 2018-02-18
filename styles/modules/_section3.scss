@@ -1,10 +1,9 @@
 .section3 {
-    background-color: rgb(235, 233, 233);
+    background-color: $background-color--light-grey;
 }
 
 .card {
     color: white;
-    
     &__item {
         @media(max-width: 767px) {
             min-height: 300px;
@@ -13,7 +12,7 @@
         @media(min-width: 768px) and (max-width: 991px) {
             min-height: 455px;
         }
-        @media(min-width: 992px){
+        @media(min-width: 992px) {
             min-height: 400px;
         }
         .fa-user,
@@ -25,22 +24,19 @@
     }
     &--light-blue {
         background-color: #21b9ed;
-
-        &:hover{
+        &:hover {
             background-color: #1b89ad;
         }
     }
     &--pink {
         background-color: #de006e;
-
-        &:hover{
+        &:hover {
             background-color: #af0359;
         }
     }
     &--green {
         background-color: #369e32;
-
-        &:hover{
+        &:hover {
             background-color: #297526;
         }
     }
